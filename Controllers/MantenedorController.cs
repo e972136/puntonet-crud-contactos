@@ -26,6 +26,7 @@ namespace puntoNet.Controllers
         {
 
             var respuesta = _contactoDatos.Guardar(oContacto);
+
             if (respuesta)
                 return RedirectToAction("Listar");
             return View();
